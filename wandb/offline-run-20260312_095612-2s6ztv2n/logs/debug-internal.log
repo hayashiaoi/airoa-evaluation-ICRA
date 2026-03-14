@@ -1,0 +1,8 @@
+{"time":"2026-03-12T09:56:12.263275674+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/demulab5090/ICRA/airoa-evaluation-ICRA/wandb/offline-run-20260312_095612-2s6ztv2n/logs/debug-core.log"}
+{"time":"2026-03-12T09:56:12.366961606+09:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2026-03-12T09:56:12.367338293+09:00","level":"INFO","msg":"created new stream","id":"2s6ztv2n"}
+{"time":"2026-03-12T09:56:12.367355972+09:00","level":"INFO","msg":"stream: started","id":"2s6ztv2n"}
+{"time":"2026-03-12T09:56:12.36743959+09:00","level":"INFO","msg":"sender: started","stream_id":"2s6ztv2n"}
+{"time":"2026-03-12T09:56:12.367470919+09:00","level":"INFO","msg":"handler: started","stream_id":"2s6ztv2n"}
+{"time":"2026-03-12T09:56:12.367482238+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"2s6ztv2n"}
+{"time":"2026-03-12T09:56:12.370426188+09:00","level":"INFO","msg":"Starting system monitor"}

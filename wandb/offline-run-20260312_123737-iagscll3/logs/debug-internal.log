@@ -1,0 +1,8 @@
+{"time":"2026-03-12T12:37:37.329523861+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/demulab5090/ICRA/airoa-evaluation-ICRA/wandb/offline-run-20260312_123737-iagscll3/logs/debug-core.log"}
+{"time":"2026-03-12T12:37:37.433965355+09:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2026-03-12T12:37:37.434046161+09:00","level":"INFO","msg":"created new stream","id":"iagscll3"}
+{"time":"2026-03-12T12:37:37.43405968+09:00","level":"INFO","msg":"stream: started","id":"iagscll3"}
+{"time":"2026-03-12T12:37:37.434104838+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"iagscll3"}
+{"time":"2026-03-12T12:37:37.434164305+09:00","level":"INFO","msg":"sender: started","stream_id":"iagscll3"}
+{"time":"2026-03-12T12:37:37.434178364+09:00","level":"INFO","msg":"handler: started","stream_id":"iagscll3"}
+{"time":"2026-03-12T12:37:37.437091601+09:00","level":"INFO","msg":"Starting system monitor"}

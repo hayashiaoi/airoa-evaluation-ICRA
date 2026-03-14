@@ -62,6 +62,7 @@ def create_trained_policy(
         if data_config.asset_id is None:
             raise ValueError("Asset id is required to load norm stats.")
         norm_stats = _checkpoints.load_norm_stats(checkpoint_dir / "assets", data_config.asset_id)
+        # norm_stats = _checkpoints.load_norm_stats(pathlib.Path("/workspace"), data_config.asset_id)
 
     # Determine the device to use for PyTorch models
     if is_pytorch and pytorch_device is None:

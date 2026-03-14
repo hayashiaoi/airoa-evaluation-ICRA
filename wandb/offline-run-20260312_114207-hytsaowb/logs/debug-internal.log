@@ -1,0 +1,15 @@
+{"time":"2026-03-12T11:42:07.046839401+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/demulab5090/ICRA/airoa-evaluation-ICRA/wandb/offline-run-20260312_114207-hytsaowb/logs/debug-core.log"}
+{"time":"2026-03-12T11:42:07.151201097+09:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2026-03-12T11:42:07.151332045+09:00","level":"INFO","msg":"created new stream","id":"hytsaowb"}
+{"time":"2026-03-12T11:42:07.151353165+09:00","level":"INFO","msg":"stream: started","id":"hytsaowb"}
+{"time":"2026-03-12T11:42:07.151382015+09:00","level":"INFO","msg":"sender: started","stream_id":"hytsaowb"}
+{"time":"2026-03-12T11:42:07.151382485+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"hytsaowb"}
+{"time":"2026-03-12T11:42:07.151427625+09:00","level":"INFO","msg":"handler: started","stream_id":"hytsaowb"}
+{"time":"2026-03-12T11:42:07.154704999+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2026-03-12T11:43:41.46954663+09:00","level":"INFO","msg":"stream: closing","id":"hytsaowb"}
+{"time":"2026-03-12T11:43:41.469619769+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2026-03-12T11:43:41.469880097+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2026-03-12T11:43:41.470350233+09:00","level":"INFO","msg":"handler: closed","stream_id":"hytsaowb"}
+{"time":"2026-03-12T11:43:41.470358393+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hytsaowb"}
+{"time":"2026-03-12T11:43:41.470383933+09:00","level":"INFO","msg":"sender: closed","stream_id":"hytsaowb"}
+{"time":"2026-03-12T11:43:41.470594282+09:00","level":"INFO","msg":"stream: closed","id":"hytsaowb"}

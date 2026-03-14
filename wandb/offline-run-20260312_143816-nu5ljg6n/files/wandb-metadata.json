@@ -1,0 +1,46 @@
+{
+  "os": "Linux-6.17.0-14-generic-x86_64-with-glibc2.39",
+  "python": "CPython 3.11.15",
+  "startedAt": "2026-03-12T05:38:16.602364Z",
+  "args": [
+    "pi05_KIT",
+    "--exp-name",
+    "10k_episodes",
+    "--overwrite"
+  ],
+  "program": "/home/demulab5090/ICRA/airoa-evaluation-ICRA/scripts/train.py",
+  "codePath": "scripts/train.py",
+  "git": {
+    "remote": "https://github.com/hayashiaoi/airoa-evaluation-ICRA.git",
+    "commit": "333783793a392609d11053715242c4aa8db113d0"
+  },
+  "root": "/home/demulab5090/ICRA/airoa-evaluation-ICRA",
+  "host": "demulab5090-B650M-Pro-X3D",
+  "executable": "/home/demulab5090/ICRA/airoa-evaluation-ICRA/.venv/bin/python3",
+  "codePathLocal": "scripts/train.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "97829425152",
+      "used": "24534372352"
+    }
+  },
+  "memory": {
+    "total": "33211330560"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 16
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 5090",
+      "memoryTotal": "34190917632",
+      "cudaCores": 21760
+    }
+  ],
+  "cudaVersion": "13.1"
+}

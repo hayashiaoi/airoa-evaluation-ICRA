@@ -1,0 +1,15 @@
+{"time":"2026-03-12T09:02:30.260181371+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/demulab5090/ICRA/airoa-evaluation-ICRA/wandb/offline-run-20260312_090230-pbeduara/logs/debug-core.log"}
+{"time":"2026-03-12T09:02:30.365485608+09:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2026-03-12T09:02:30.365572265+09:00","level":"INFO","msg":"created new stream","id":"pbeduara"}
+{"time":"2026-03-12T09:02:30.365587184+09:00","level":"INFO","msg":"stream: started","id":"pbeduara"}
+{"time":"2026-03-12T09:02:30.365602004+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"pbeduara"}
+{"time":"2026-03-12T09:02:30.365608464+09:00","level":"INFO","msg":"sender: started","stream_id":"pbeduara"}
+{"time":"2026-03-12T09:02:30.365672702+09:00","level":"INFO","msg":"handler: started","stream_id":"pbeduara"}
+{"time":"2026-03-12T09:02:30.368109626+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2026-03-12T09:24:26.859202252+09:00","level":"INFO","msg":"stream: closing","id":"pbeduara"}
+{"time":"2026-03-12T09:24:26.859836468+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2026-03-12T09:24:26.860455064+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2026-03-12T09:24:26.862379438+09:00","level":"INFO","msg":"handler: closed","stream_id":"pbeduara"}
+{"time":"2026-03-12T09:24:26.862385607+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"pbeduara"}
+{"time":"2026-03-12T09:24:26.862392057+09:00","level":"INFO","msg":"sender: closed","stream_id":"pbeduara"}
+{"time":"2026-03-12T09:24:26.862426045+09:00","level":"INFO","msg":"stream: closed","id":"pbeduara"}

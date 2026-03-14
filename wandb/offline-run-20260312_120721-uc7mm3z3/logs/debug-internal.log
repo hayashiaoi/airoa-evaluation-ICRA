@@ -1,0 +1,15 @@
+{"time":"2026-03-12T12:07:21.558683369+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/demulab5090/ICRA/airoa-evaluation-ICRA/wandb/offline-run-20260312_120721-uc7mm3z3/logs/debug-core.log"}
+{"time":"2026-03-12T12:07:21.663698449+09:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2026-03-12T12:07:21.664025344+09:00","level":"INFO","msg":"created new stream","id":"uc7mm3z3"}
+{"time":"2026-03-12T12:07:21.664147817+09:00","level":"INFO","msg":"stream: started","id":"uc7mm3z3"}
+{"time":"2026-03-12T12:07:21.664276789+09:00","level":"INFO","msg":"handler: started","stream_id":"uc7mm3z3"}
+{"time":"2026-03-12T12:07:21.664284709+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"uc7mm3z3"}
+{"time":"2026-03-12T12:07:21.664301219+09:00","level":"INFO","msg":"sender: started","stream_id":"uc7mm3z3"}
+{"time":"2026-03-12T12:07:21.666685161+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2026-03-12T12:09:16.212183922+09:00","level":"INFO","msg":"stream: closing","id":"uc7mm3z3"}
+{"time":"2026-03-12T12:09:16.212518668+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2026-03-12T12:09:16.213526135+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2026-03-12T12:09:16.216353615+09:00","level":"INFO","msg":"handler: closed","stream_id":"uc7mm3z3"}
+{"time":"2026-03-12T12:09:16.216365965+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"uc7mm3z3"}
+{"time":"2026-03-12T12:09:16.216561958+09:00","level":"INFO","msg":"sender: closed","stream_id":"uc7mm3z3"}
+{"time":"2026-03-12T12:09:16.217839801+09:00","level":"INFO","msg":"stream: closed","id":"uc7mm3z3"}
