@@ -107,3 +107,45 @@ Action order:
 Value requirement:
 
 - finite numeric values only
+
+## 9. TeamKIT Deployment Procedure
+
+### 9.1 environment variables
+```bash
+export TEST_MODE=false
+export HSR_IP=<YOUR_HSR_IP>
+export ROS_MASTER_URI=http://<YOUR_HOST_IP>:11311
+export ROS_IP=<YOUR_HOST_IP>
+export POLICY_CHECKPOINT_PATH=/abs/path/to/checkpoint_dir
+export POLICY_SERVER_HOST=127.0.0.1
+export POLICY_SERVER_PORT=8000
+export POLICY_SERVER_API_KEY=
+export POLICY_CACHE_DIR=$PWD/.docker_cache/policy_cache
+export HF_CACHE_DIR=$PWD/.docker_cache/hf
+export ROSBAG_DIR=$PWD/datasets/rosbags
+```
+
+### 9.2 Optional policy-specific variables
+```bash
+export POLICY_CONFIG_NAME=pi05_KIT
+export POLICY_DEFAULT_PROMPT="Pick up the coffee bottle on the right"
+export POLICY_RECORD_DIR=record_dir
+export POLICY_PYTORCH_DEVICE=cuda
+```
+
+### 9.3 Start and verify containers
+```bash
+./RUN-DOCKER-CONTAINER.sh up
+./RUN-DOCKER-CONTAINER.sh logs policy_server
+./RUN-DOCKER-CONTAINER.sh logs hsr_client
+```
+
+### 9.4 Run deploy launch
+Enter client shell:
+```bash
+./RUN-DOCKER-CONTAINER.sh shell
+```
+Launch inside client container:
+```bash
+roslaunch hsr_policy_client hsr_policy_client.launch test_mode:=false
+```
