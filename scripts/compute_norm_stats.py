@@ -8,6 +8,8 @@ to the config assets directory.
 import numpy as np
 import tqdm
 import tyro
+import torch
+import lerobot.datasets.lerobot_dataset as ld
 
 import openpi.models.model as _model
 import openpi.shared.normalize as normalize
@@ -84,6 +86,16 @@ def create_rlds_dataloader(
         num_batches=num_batches,
     )
     return data_loader, num_batches
+
+
+def fast_dummy_query_videos(self, timestamps, ep_idx):
+    keys = [k for k, f in self.features.items() if f.get("dtype") in ("video", "image") or f.get("type") in ("video", "image")]
+    if not keys:
+        keys = ["observation.image.hand", "observation.image.head"]
+    num_frames = len(timestamps) if hasattr(timestamps, "__len__") else 1
+    return {k: torch.zeros((num_frames, 3, 224, 224), dtype=torch.uint8) for k in keys}
+
+ld.LeRobotDataset._query_videos = fast_dummy_query_videos
 
 
 def main(config_name: str, max_frames: int | None = None):

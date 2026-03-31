@@ -190,6 +190,7 @@ cmd_down() {
       found=true
       echo "[INFO] Removing container: ${container}"
       docker rm -f "${container}" >/dev/null
+      # docker stop "${container}" >/dev/null
     fi
   done
 

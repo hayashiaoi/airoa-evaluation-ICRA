@@ -1097,9 +1097,9 @@ _CONFIGS = [
         num_workers=8, # Increase num_workers to speed up data loading with larger datasets.
         pytorch_weight_path="/home/user_00103_25b505/shared-storage/dev/models/pi05",
     ),
-    # ここで自分たちの学習設定をおこなう
+    # ここで自分たちの学習設定をおこなう(DSPL)
     TrainConfig(
-        name="pi05_KIT",
+        name="pi05_DSPL",
         model=pi0_config.Pi0Config(
             pi05=True,
             paligemma_variant="gemma_2b_lora",
@@ -1108,10 +1108,10 @@ _CONFIGS = [
             action_horizon=16,
         ),
         data=LeRobotHSRDataConfig(
-            repo_id="./dataset",
+            repo_id="airoa-org/airoa-moma",
             assets=AssetsConfig(
-            assets_dir=".",
-            asset_id="dataset"
+            assets_dir="airoa-org",
+            asset_id="airoa-moma"
             ),
             base_config=DataConfig(
                 prompt_from_task=True,
@@ -1119,14 +1119,14 @@ _CONFIGS = [
         ),
         weight_loader=weight_loaders.CheckpointWeightLoader("gs://openpi-assets/checkpoints/pi05_base/params"),
         lr_schedule=_optimizer.CosineDecaySchedule(
-            warmup_steps=5_000,
-            peak_lr=1.25e-5,    # 2.5e-5 × √16 = 1.0e-4
-            decay_steps=50_000,
-            decay_lr=1.25e-6,   # 2.5e-6 × √16 = 1.0e-5
+            warmup_steps=10_000,
+            peak_lr=2.50e-5,    # 2.5e-5 × √16 = 1.0e-4
+            decay_steps=100_000,
+            decay_lr=2.50e-6,   # 2.5e-6 × √16 = 1.0e-5
         ),
         batch_size=16,
         num_workers=0,
-        num_train_steps=50_000,
+        num_train_steps=100_000,
         freeze_filter=pi0_config.Pi0Config(
             pi05=True,
             paligemma_variant="gemma_2b_lora",

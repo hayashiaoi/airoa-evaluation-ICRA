@@ -177,6 +177,14 @@ def _decode_hsr(data: dict, *, adapt_to_pi: bool = False, convert_gripper: bool 
         data["actions"] = actions
 
     def convert_image(img):
+        import torch
+        # LeRobot v3 から来る Tensor 形式の画像に対応
+        if isinstance(img, torch.Tensor):
+            if img.ndim == 4: 
+                img = img[0]
+            # PyTorchの [C, H, W] を 画像用の [H, W, C] に変換してNumpyにする
+            img = img.permute(1, 2, 0).detach().cpu().numpy()
+
         img = np.asarray(img)
         # Convert to uint8 if using float images.
         if np.issubdtype(img.dtype, np.floating):

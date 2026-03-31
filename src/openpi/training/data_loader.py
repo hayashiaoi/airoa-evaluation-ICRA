@@ -7,7 +7,7 @@ from typing import Literal, Protocol, SupportsIndex, TypeVar
 
 import jax
 import jax.numpy as jnp
-import lerobot.common.datasets.lerobot_dataset as lerobot_dataset
+import lerobot.datasets.lerobot_dataset as lerobot_dataset
 import numpy as np
 import torch
 
@@ -138,6 +138,16 @@ def create_torch_dataset(
         return FakeDataset(model_config, num_samples=1024)
 
     dataset_meta = lerobot_dataset.LeRobotDatasetMetadata(repo_id)
+    # --- HOTFIX FOR LEROBOT V3 TASKS ---
+    if hasattr(dataset_meta, "tasks"):
+        import pandas as pd
+        if isinstance(dataset_meta.tasks, pd.DataFrame):
+            dataset_meta.tasks = {int(r["task_index"]): str(i) for i, r in dataset_meta.tasks.iterrows()}
+        elif isinstance(dataset_meta.tasks, dict) and len(dataset_meta.tasks) > 0:
+            k, v = next(iter(dataset_meta.tasks.items()))
+            if isinstance(k, str) and isinstance(v, int):
+                dataset_meta.tasks = {val: key for key, val in dataset_meta.tasks.items()}
+
     dataset = lerobot_dataset.LeRobotDataset(
         data_config.repo_id,
         delta_timestamps={

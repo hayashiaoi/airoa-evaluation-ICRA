@@ -43,10 +43,11 @@ def main() -> None:
         pytorch_device=args.pytorch_device,
     )
 
+
+    metadata = dict(policy.metadata)
     if args.record_dir:
         policy = policy_lib.PolicyRecorder(policy, args.record_dir)
 
-    metadata = dict(policy.metadata)
     metadata.update(
         {
             "config_name": config_name,

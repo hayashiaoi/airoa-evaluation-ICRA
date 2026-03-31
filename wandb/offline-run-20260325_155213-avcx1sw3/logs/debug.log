@@ -1,0 +1,21 @@
+2026-03-25 15:52:13,345 INFO    MainThread:1131142 [wandb_setup.py:_flush():81] Current SDK version is 0.24.2
+2026-03-25 15:52:13,345 INFO    MainThread:1131142 [wandb_setup.py:_flush():81] Configure stats pid to 1131142
+2026-03-25 15:52:13,345 INFO    MainThread:1131142 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-03-25 15:52:13,345 INFO    MainThread:1131142 [wandb_init.py:setup_run_log_directory():717] Logging user logs to /home/demulab5090/DSPL2026/wandb/offline-run-20260325_155213-avcx1sw3/logs/debug.log
+2026-03-25 15:52:13,345 INFO    MainThread:1131142 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to /home/demulab5090/DSPL2026/wandb/offline-run-20260325_155213-avcx1sw3/logs/debug-internal.log
+2026-03-25 15:52:13,345 INFO    MainThread:1131142 [wandb_init.py:init():844] calling init triggers
+2026-03-25 15:52:13,346 INFO    MainThread:1131142 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'name': 'pi05_DSPL', 'project_name': 'openpi', 'exp_name': 'DSPL01', 'model': {'action_dim': 32, 'action_horizon': 16, 'max_token_len': 200, 'dtype': 'bfloat16', 'paligemma_variant': 'gemma_2b_lora', 'action_expert_variant': 'gemma_300m_lora', 'pi05': True, 'discrete_state_input': True}, 'weight_loader': {'params_path': 'gs://openpi-assets/checkpoints/pi05_base/params'}, 'pytorch_weight_path': None, 'pytorch_training_precision': 'bfloat16', 'pytorch_sample_data': False, 'lr_schedule': {'warmup_steps': 10000, 'peak_lr': 2.5e-05, 'decay_steps': 100000, 'decay_lr': 2.5e-06}, 'optimizer': {'b1': 0.9, 'b2': 0.95, 'eps': 1e-08, 'weight_decay': 1e-10, 'clip_gradient_norm': 1.0}, 'ema_decay': None, 'freeze_filter': All(PathRegex(pattern=re.compile('.*llm.*'), sep='/'), Not(PathRegex(pattern=re.compile('.*lora.*'), sep='/'))), 'data': {'repo_id': 'airoa-org/airoa-moma', 'assets': {'assets_dir': 'airoa-org', 'asset_id': 'airoa-moma'}, 'base_config': {'repo_id': None, 'asset_id': None, 'norm_stats': None, 'repack_transforms': {'inputs': (), 'outputs': ()}, 'data_transforms': {'inputs': (), 'outputs': ()}, 'model_transforms': {'inputs': (), 'outputs': ()}, 'use_quantile_norm': False, 'action_sequence_keys': ('actions',), 'prompt_from_task': True, 'rlds_data_dir': None, 'action_space': None, 'filter_dict_path': None}, 'default_prompt': None, 'adapt_to_pi': True, 'action_sequence_keys': ('action.state_diff', 'action.relative'), 'action_mode': 'relative', 'convert_gripper': False, 'base_action_dim': 3}, 'assets_base_dir': './assets', 'checkpoint_base_dir': './checkpoints', 'seed': 42, 'batch_size': 16, 'num_workers': 0, 'num_train_steps': 50000, 'log_interval': 100, 'save_interval': 1000, 'keep_period': 5000, 'overwrite': True, 'resume': False, 'wandb_enabled': True, 'policy_metadata': None, 'fsdp_devices': 1, '_wandb': {}}
+2026-03-25 15:52:13,346 INFO    MainThread:1131142 [wandb_init.py:init():892] starting backend
+2026-03-25 15:52:13,633 INFO    MainThread:1131142 [wandb_init.py:init():895] sending inform_init request
+2026-03-25 15:52:13,638 INFO    MainThread:1131142 [wandb_init.py:init():903] backend started and connected
+2026-03-25 15:52:13,639 INFO    MainThread:1131142 [wandb_init.py:init():973] updated telemetry
+2026-03-25 15:52:13,642 INFO    MainThread:1131142 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-03-25 15:52:13,801 INFO    MainThread:1131142 [wandb_init.py:init():1042] starting run threads in backend
+2026-03-25 15:52:13,868 INFO    MainThread:1131142 [wandb_run.py:_console_start():2529] atexit reg
+2026-03-25 15:52:13,868 INFO    MainThread:1131142 [wandb_run.py:_redirect():2377] redirect: wrap_raw
+2026-03-25 15:52:13,868 INFO    MainThread:1131142 [wandb_run.py:_redirect():2446] Wrapping output streams.
+2026-03-25 15:52:13,868 INFO    MainThread:1131142 [wandb_run.py:_redirect():2469] Redirects installed.
+2026-03-25 15:52:13,871 INFO    MainThread:1131142 [wandb_init.py:init():1082] run started, returning control to user process
+2026-03-25 15:52:22,368 INFO    wandb-AsyncioManager-main:1131142 [service_client.py:_forward_responses():94] Reached EOF.
+2026-03-25 15:52:22,368 INFO    wandb-AsyncioManager-main:1131142 [mailbox.py:close():154] Closing mailbox, abandoning 0 handles.

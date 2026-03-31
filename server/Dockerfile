@@ -39,14 +39,14 @@ COPY packages/policy-client ./packages/policy-client
 COPY src/openpi ./src/openpi
 COPY server ./server
 COPY runtime_core ./runtime_core
-COPY dataset/norm_stats.json ./dataset/norm_stats.json 
+#COPY dataset/norm_stats.json ./dataset/norm_stats.json 
 
 # すでに一番重い av はインストール済みのため、この sync は他の軽量パッケージの
 # ダウンロードとローカルコードの同期のみになり、数秒で終わります。
 RUN GIT_LFS_SKIP_SMUDGE=1 uv sync --frozen --no-dev
 # ==========================================================
 
-RUN uv pip install --python /workspace/.venv/bin/python pytest
+RUN uv pip install --python /workspace/.venv/bin/python pytest lerobot
 
 # Support PyTorch checkpoints (same behavior as upstream serve_policy image).
 RUN /workspace/.venv/bin/python -c "import transformers; print(transformers.__file__)" | xargs dirname | xargs -I{} cp -r /workspace/src/openpi/models_pytorch/transformers_replace/* {}
