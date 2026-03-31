@@ -1097,9 +1097,9 @@ _CONFIGS = [
         num_workers=8, # Increase num_workers to speed up data loading with larger datasets.
         pytorch_weight_path="/home/user_00103_25b505/shared-storage/dev/models/pi05",
     ),
-    # ここで自分たちの学習設定をおこなう(DSPL)
+    # ここで自分たちの学習設定をおこなう(KIT)
     TrainConfig(
-        name="pi05_DSPL",
+        name="pi05_KIT",
         model=pi0_config.Pi0Config(
             pi05=True,
             paligemma_variant="gemma_2b_lora",
